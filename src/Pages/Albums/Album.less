@@ -1,1 +1,140 @@
-@import '~antd/dist/antd.less';
+.AlbumsPage{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    overflow: auto; 
+}
+
+.suggestions{
+    width: 100%;
+    min-height: 398px;
+    background-image: linear-gradient(45deg, #FF7A50, #FF3D00);
+    border-radius: 39px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    transition: 300ms ease-in-out;
+
+    > button{
+        width: 37px;
+        height: 37px;
+        background: none;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: 50px;
+        line-height: 1;
+        padding: 0;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+
+        &:hover{
+            background-color: white;
+            >img{
+                filter: hue-rotate(180deg) sepia(100%) invert(100%);;
+            }
+        }
+    }
+}
+
+.AlbumsList{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+
+    >.Album{
+        margin: 12px 22px 0px 0px;
+        >.AlbumImg{
+            width: 138px;
+            height: 133px;
+            border-radius: 27px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 27px;
+                position: absolute;  
+                z-index: 10;
+            }
+
+            >span{
+                width: 100%;
+                height: 100%;
+                border-radius: 27px;
+                position: absolute;
+                z-index: 15;
+                opacity: 0;
+                display: flex;
+                background-color: rgba(0,0,0,0.72);
+            }
+
+            >a{
+                width: 37px;
+                height: 37px;
+                background: none;
+                border: 2px solid white;
+                border-radius: 50%;
+                line-height: 1;
+                opacity: 0;
+                transition: 300ms ease-in-out;
+                position: absolute;
+                z-index: 20;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                &:hover{
+                    background-color: white;
+                    >img{
+                        filter: hue-rotate(180deg) sepia(100%) invert(100%);;
+                    }
+                }
+            }
+
+            &:hover{
+                >span{
+                    opacity: 1;
+                }
+                >a{
+                    opacity: 1;
+                }
+            }
+        }
+
+        >.AlbumTitle{
+            >h3{
+                font-size: 14px;
+                font-weight: 300;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+            >p{
+                color: #989898;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    .AlbumsPage{
+        width: 100%;
+        padding: 0px 41px 0px 41px;
+        position: absolute;
+        margin: 0 auto;
+
+        >.suggestions{
+            height: 270px;
+        }
+    }
+}

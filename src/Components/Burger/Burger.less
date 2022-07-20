@@ -1,0 +1,103 @@
+.burgerMenu{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    transition: 300ms ease-in-out;
+
+    >img{
+        margin-bottom: 40px;
+    }
+
+    >h2{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+
+    }
+
+    >.icons{
+        width: 257px;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 20px 0px 50px 0px;
+        
+
+        >a{
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            >h4{
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                color: white;
+                position: absolute;
+                bottom: -30px;
+            }
+
+            >img{
+                pointer-events: none;
+            }
+        }
+
+        >.Home{
+            background-image: linear-gradient(136.76deg, #D989FF 9.36%, #AD00FF 100%);
+            border-radius: 12px;
+        }
+
+        >.Albums{
+            background-image: linear-gradient(136.64deg, #FF7A50 2.7%, #FF3D00 100%);
+            border-radius: 12px;
+        }
+
+        >.Tracks{
+            background-image: linear-gradient(135deg, #FF6B6B 0%, #FF0000 100%);
+            border-radius: 12px;
+        }
+        >.Genre{
+            background-image: linear-gradient(135deg, #78FFE7 0%, #70C3FF 100%);
+            border-radius: 12px;
+        }
+    }
+
+    >ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+        padding: 0;
+        >li{
+            list-style: none;
+            text-align: center;
+            margin: 5px 0px 5px 0px;
+
+            >a{
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 24px;
+               
+            }
+        }
+
+    }
+    
+}

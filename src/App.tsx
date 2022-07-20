@@ -3,9 +3,12 @@ import {  Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import  Main from './Pages/Albums/Album';
 import Nav from './Components/Nav/Nav';
-import Left from './Components/Left/Left';
-import Right from './Components/Right/Right';
+import Left from './Components/LeftSideBar/Left';
+import Right from './Components/RightSideBar/Right';
+
+import Album from './Pages/Albums/Album';
 import './App.less';
+
 
 function App() {
   
@@ -14,7 +17,9 @@ function App() {
         <Nav />
         <section className='mainApp'>
           <Left />
-          <Main />
+          <div className='centerApp'>
+            <Album />
+          </div>
           <Right />
         </section>
     </section>
