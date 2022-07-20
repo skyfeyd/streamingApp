@@ -2,6 +2,53 @@
     min-width: 250px;
     height: 100%;
     margin: 0px 41px 0px 41px;
+    background-color: red;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    >h2{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+    }
+
+    >ul{
+        >li{
+            list-style: none;
+
+            >a{
+                font-size: 14px;
+                font-weight: 300;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .Browse{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        >li{
+            width: 30%;
+            
+            >a{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 860px) {
