@@ -2,33 +2,19 @@
     min-width: 250px;
     height: 100%;
     margin: 0px 41px 0px 41px;
-    background-color: red;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     >h2{
-        font-weight: 700;
+        font-weight: bold;
         font-size: 20px;
         line-height: 24px;
         color: white;
+        margin-left: 12%;
     }
 
     >ul{
-        >li{
-            list-style: none;
-
-            >a{
-                font-size: 14px;
-                font-weight: 300;
-                color: white;
-                margin: 0;
-                padding: 0;
-            }
-        }
-    }
-
-    .Browse{
         width: 250px;
         display: flex;
         justify-content: center;
@@ -36,17 +22,85 @@
         flex-direction: column;
         margin: 0;
         padding: 0;
-
         >li{
-            width: 30%;
+            list-style: none;
+            padding: 5px 7px 5px 7px;
+            transition: 300ms ease-in-out;
+
+            >a{
+                font-size: 20px;
+                font-weight: 300;
+                color: #989898;
+                margin: 0;
+                padding: 0;
+            }
+
+            &:hover{
+                background-color: #272727;
+                border-radius: 12px;
+
+                >a{
+                    color: white;
+                }
+            }
+
             
+        }
+        
+        .openedPage{
+            background-color: #272727;
+            border-radius: 12px;
+
+            >a{
+                color: white;
+            }
+
+            &:hover{
+                background-color: #272727;
+                border-radius: 12px;
+
+                >a{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .Browse{
+        >li{
+            width: 80%;
+            margin: 5px 0px 5px 0px ;
             >a{
                 width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: start;
                 align-items: center;
-                margin: 0;
+                
+                >img{
+                    width: 27px;
+                    height: 27px;
+                    margin-right: 20px;
+                    filter: grayscale(80%);
+                }
+
+                .genreIcon{
+                    margin-right: 25px;
+                }
             }
+
+            
+        }
+    }
+
+    .LibrairyTitle{
+        margin: 80px 0px 5px 12%; ;
+    }
+
+    .Librairy{
+        
+        >li{
+            width: 80%;
+            margin: 5px 0px 5px 0px ;
         }
     }
 }
