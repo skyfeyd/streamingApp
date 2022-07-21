@@ -7,12 +7,13 @@ import { Akira } from '../../Assets/pictures/index';
 import Burger from '../Burger/Burger';
 
 
+
 function Nav() {
 
     const UserPic = Akira
     const UserName = 'Akira'
-    const Listening = 'Fenêtre de rue'
-
+    const Track = 'Adios Bahamas'
+    
 
     let [isOpen, setIsOpen] = React.useState(false);
 
@@ -34,7 +35,7 @@ function Nav() {
                     <img className='userPic' src={ UserPic } alt="" />
                     <div>
                         <h3 className='userName'>{ UserName }</h3>
-                        <p className='listeningTo'>Ecoute { Listening } </p>
+                        <p className='listeningTo'>Ecoute { Track }</p>
                     </div>
                 </div>
             </a>

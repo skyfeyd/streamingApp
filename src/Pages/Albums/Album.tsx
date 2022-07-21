@@ -9,7 +9,7 @@ import './Album.less';
 function Main() {
 
   let data = [{
-    Title: 'Adios Bahamas',
+    Title: '444 Nuits',
     Artist: 'Nepal',
     Cover: CoverNepal,
   },
@@ -49,32 +49,32 @@ function Main() {
     Cover: CoverHugo,
   },
   {
-    Title: 'Adios Bahamas',
+    Title: '444 Nuits',
     Artist: 'Nepal',
     Cover: CoverNepal,
   },
   {
-    Title: 'Adios Bahamas',
+    Title: '444 Nuits',
     Artist: 'Nepal',
     Cover: CoverNepal,
   },
   {
-    Title: 'Adios Bahamas',
+    Title: '444 Nuits',
     Artist: 'Nepal',
     Cover: CoverNepal,
   },
   {
-    Title: 'Adios Bahamas',
+    Title: '444 Nuits',
     Artist: 'Nepal',
     Cover: CoverNepal,
   },
   {
-    Title: 'Adios Bahamas',
+    Title: '444 Nuits',
     Artist: 'Nepal',
     Cover: CoverNepal,
   },
   {
-    Title: 'Adios Bahamas',
+    Title: '444 Nuits',
     Artist: 'Nepal',
     Cover: CoverNepal,
   },

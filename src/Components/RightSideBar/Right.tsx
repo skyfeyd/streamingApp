@@ -1,22 +1,66 @@
 import * as React from 'react';
+import { CoverNepal } from '../../Assets/pictures/index';
 import './Right.less';
-//const Nepal = require('./Nepal.mp3');
 
+import  Nuits  from '../../Assets/music/444Nuits/index'
+
+import { prev } from '../../Assets/pictures/index'
+import { play } from '../../Assets/pictures/index'
+import { next } from '../../Assets/pictures/index'
+import { pause } from '../../Assets/pictures/index'
 
 
 function Right() {
 
-    const test = 'https://open.spotify.com/track/4VrWlk8IQxevMvERoX08iC'
+    let data = {
+        Track: 'Opening',
+        Artist: 'Nepal',
+        Source: 'test',
+        Cover: CoverNepal,
+    };
+
+    let [playing, setPlaying] = React.useState(true);
+    console.log(playing);
+    let [noplaying, setnoPlaying] = React.useState(false);
+    console.log('no', noplaying);
+
+
 
     return (
         <section className='right'>
-        <h1>Right</h1>
-        <audio>
-            <source src={ test } />
-        </audio>
+            <div className='driver'>
+                <audio>
+                    <source />
+                </audio>
+                <div className='driver-cover'>
+                    <img src={ data.Cover } alt="" />
+                    <span className='filterCover'></span>
+                </div>
+                <div className='driver-info'>
+                    <h3>{ data.Track }</h3>
+                    <p>{ data.Artist }</p>
+                    <div className='driver-duration'>
+                        <input type='range' name='progress-bar' value='50' min='0' max='1000' step='0.1'/>
+                    </div>
+                    <div className='driver-time'>
+                        <span>0.00</span>
+                        <span>3.13</span>
+                    </div>
+                    <div className='driver-controls'>
+                        <button><img src={ prev } alt="" /></button>
+                        { noplaying && <button className={ playing ? 'btn-hidden' : '' } onClick={() => {setPlaying(playing = false); setnoPlaying(noplaying = true)}}><img src={ play } alt="" /></button> }
+                        { playing && <button className={ noplaying ? 'btn-hidden' : '' } onClick={() => {setPlaying(playing = true); setnoPlaying(noplaying = false)}}><img src={ pause } alt="" /></button>}
+                        <button><img src={ next } alt="" /></button>
+                    </div>
+                    <div className='nextInLine'>
+                        
+
+                    </div>
+                </div>
+            </div>
+        
         </section>
     );
 }
-
 
 export default Right;
