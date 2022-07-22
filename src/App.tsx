@@ -6,8 +6,14 @@ import Nav from './Components/Nav/Nav';
 import Left from './Components/LeftSideBar/Left';
 import Right from './Components/RightSideBar/Right';
 
-import Album from './Pages/Albums/Album';
+
 import './App.less';
+
+
+
+
+import Album from './Pages/Albums/Album';
+
 
 
 function App() {
@@ -18,7 +24,7 @@ function App() {
         <section className='mainApp'>
           <Left />
           <div className='centerApp'>
-            <Album />
+            <Album /> 
           </div>
           <Right />
         </section>

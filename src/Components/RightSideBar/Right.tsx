@@ -25,6 +25,8 @@ function Right() {
     console.log('no', noplaying);
 
 
+    
+
 
     return (
         <section className='right'>
@@ -48,8 +50,8 @@ function Right() {
                     </div>
                     <div className='driver-controls'>
                         <button><img src={ prev } alt="" /></button>
-                        { noplaying && <button className={ playing ? 'btn-hidden' : '' } onClick={() => {setPlaying(playing = false); setnoPlaying(noplaying = true)}}><img src={ play } alt="" /></button> }
-                        { playing && <button className={ noplaying ? 'btn-hidden' : '' } onClick={() => {setPlaying(playing = true); setnoPlaying(noplaying = false)}}><img src={ pause } alt="" /></button>}
+                        { noplaying && <button className={ playing ? 'btn-play btn-hidden' : 'btn-play' } onClick={() => {setPlaying(!playing); setnoPlaying(!noplaying)}}><img src={ play } alt="" /></button> }
+                        { playing && <button className={ noplaying ? 'btn-pause btn-hidden' : 'btn-pause' } onClick={() => {setPlaying(!playing); setnoPlaying(!noplaying)}}><img src={ pause } alt="" /></button>}
                         <button><img src={ next } alt="" /></button>
                     </div>
                     <div className='nextInLine'>

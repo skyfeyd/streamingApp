@@ -7,7 +7,9 @@ import { GenreIcon } from '../../Assets/pictures/index';
 
 import './Left.less';
 
-function left() {
+function Left() {
+
+
   return (
     <section className='left'>
       <h2>Browse</h2>
@@ -30,4 +32,4 @@ function left() {
 }
 
 
-export default left;
+export default Left;
